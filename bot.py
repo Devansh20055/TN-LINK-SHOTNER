@@ -65,7 +65,7 @@ async def link_handler(bot, message):
 
 
 async def get_shortlink(link):
-    url = 'https://urlshortx.com/api'
+    url = 'https://tnlinks.in/api'
     params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
