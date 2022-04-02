@@ -21,9 +21,9 @@ from pyrogram import Client, filters
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
-API_KEY = environ.get('API_KEY', '4b17f6a264b2bbe471bf6b71ae3cd28dfc36ae90')
+API_KEY = environ.get('API_KEY', '6ce564a47c0e420edb76d6aa818455a4a76bb556')
 
-bot = Client('URLSHORTX',
+bot = Client('TNLINK',
              api_id=API_ID,
              api_hash=API_HASH,
              bot_token=BOT_TOKEN,
@@ -35,7 +35,7 @@ bot = Client('URLSHORTX',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "<i><u><b>I'm a specialised bot for shortening <a href=\"https://bit.ly/3pkR1ft\">droplink.co</a> .  </i></u></b>\n\n  <i><u><b> 📍 USE /help FOR MORE 📍  \n\n 🔰📍Made by @TEAM_SILENT_KING 🔰📍. \n\n ⚜️ MY DEV :- @ITS_NOT_ROMEO ⚜️ \n\n ⚡️⚡️ FOR MORE OPEN SOURCE FOLLOW :- [DEVANSH20055](https://github.com/Devansh20055) \n ON GITHUB ⚡️⚡️ \n\n ‼️ USE /SOURCE FOR SOURCE CODE OF BOT ‼️ </i></u></b>", disable_web_page_preview=True )
+        "<i><u><b>I'm a specialised bot for shortening <a href=\"https://bit.ly/3K6jyxI\"> tnlink.in</a> .  </i></u></b>\n\n  <i><u><b> 📍 USE /help FOR MORE 📍  \n\n 🔰📍Made by @TEAM_SILENT_KING 🔰📍. \n\n ⚜️ MY DEV :- @ITS_NOT_ROMEO ⚜️ \n\n ⚡️⚡️ FOR MORE OPEN SOURCE FOLLOW :- [DEVANSH20055](https://github.com/Devansh20055) \n ON GITHUB ⚡️⚡️ \n\n ‼️ USE /SOURCE FOR SOURCE CODE OF BOT ‼️ </i></u></b>", disable_web_page_preview=True )
 
 @bot.on_message(filters.command('help') & filters.private)
 async def start(bot, message):
@@ -47,7 +47,7 @@ async def start(bot, message):
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}! **\n\n"
-        " **HERE IS THE SOURCE CODE :- \n https://github.com/Devansh20055/LINK-SHORTER **<i><b><u> \n\n Star ⭐️ THE REPO TOO ** \n\n 🔰📍Made by @TEAM_SILENT_KING 🔰📍. \n\n ⚜️ MADE BY  :- @ITS_NOT_ROMEO ⚜️ \n\n ⚡️⚡️ FOR MORE OPEN SOURCE FOLLOW :- [DEVANSH20055](https://github.com/Devansh20055) \n ON GITHUB ⚡️⚡️ \n\n ‼️ USE /SOURCE FOR SOURCE CODE OF BOT ‼️ </i></u></b>", disable_web_page_preview=True )
+        " **HERE IS THE SOURCE CODE :- \n https://github.com/Devansh20055/TN-LINK-SHOTNER **<i><b><u> \n\n Star ⭐️ THE REPO TOO ** \n\n 🔰📍Made by @TEAM_SILENT_KING 🔰📍. \n\n ⚜️ MADE BY  :- @ITS_NOT_ROMEO ⚜️ \n\n ⚡️⚡️ FOR MORE OPEN SOURCE FOLLOW :- [DEVANSH20055](https://github.com/Devansh20055) \n ON GITHUB ⚡️⚡️ \n\n ‼️ USE /SOURCE FOR SOURCE CODE OF BOT ‼️ </i></u></b>", disable_web_page_preview=True )
 
 
 
@@ -59,7 +59,7 @@ async def link_handler(bot, message):
     for num in range(len(links)):
       try:
         short_link = await get_shortlink(links[num])
-        await message.reply(f"<i><u>**🔱 Long URL:** {links[num]}</i></u> \n\n <i><u>** ⚜️ Shortened URL: {short_link}\n\n 🔆DON'T KNOW HOW TO DOWNLOAD...?🔆 \n 🔰 WATCH THIS </i></u> :-https://bit.ly/3H80Rbv 🔰 \n\n〽️<i><u> Powered by @TEAM_SILENT_KING </i></u>** " , quote=True, disable_web_page_preview=True)
+        await message.reply(f"<i><u>**🔱 Long URL:** {links[num]}</i></u> \n\n <i><u>** ⚜️ Shortened URL: {short_link}\n\n 🔆DON'T KNOW HOW TO DOWNLOAD...?🔆 \n 🔰 WATCH THIS </i></u> :-https://bit.ly/3uSw9OF 🔰 \n\n〽️<i><u> Powered by @TEAM_SILENT_KING </i></u>** " , quote=True, disable_web_page_preview=True)
       except Exception as e:
         await message.reply(f'Error: {e}', quote=True)
 
